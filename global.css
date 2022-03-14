@@ -1,0 +1,41 @@
+:root {
+  --border-color: #291d4d;
+  --dialog-background: #fff3b4;
+
+  --menu-background: #ffe8d2;
+  --menu-border-color: #a48465;
+  --menu-font-color: #3a160d;
+  --menu-selected-background: #7fc2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #333; */
+  background: linear-gradient(
+    to left,
+    var(--menu-border-color),
+    var(--dialog-background)
+  );
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Ribeye', cursive;
+}
+
+.game-container {
+  position: relative;
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+
+  transform: scale(3) translateY(40%);
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+  background-color: #333;
+}
